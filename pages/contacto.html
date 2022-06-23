@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dosis:wght@300&display=swap" rel="stylesheet">
+    <title>contacto</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <img class="menu-burger" onclick="showMenuCollapsed()" src="../assets/img/burger_icon.png" alt="menu" srcset="">
+            <ul class="menu-collapsed display-none" id="menu">
+                <li><a id="home" href="../pages/index.html">Inicio</a></li>
+                <li><a href="../pages/biografia.html">Sobre mi</a></li>
+                <li><a href="../pages/porfolio.html">Portfolio</a></li>
+                <li><a href="../pages/contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+        <nav>
+            <ul class="normal-menu">
+                <li><a id="home" href="../pages/index.html">Inicio</a></li>
+                <li><a href="../pages/biografia.html">Sobre mi</a></li>
+                <li><a href="../pages/porfolio.html">Portfolio</a></li>
+                <li><a href="../pages/contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <main>
+        <section id="contacto-page">
+            <h2 class="formulario-h2">Formulario de contacto</h2>
+            <p>¡Es el momento de decidirse! Si lo que has visto te ha sabido a poco o si deseas contactar conmigo por cualquier otro motivo, es preciso que cumplimentes el formulario. ¡Recibirás una respuesta a la mayor brevedad posible!</p>
+            <form action="#contact" class="formulario">
+                <div class="separacion">
+                    <div>
+                        <label for="fname">Nombre:</label><br>
+                        <input type="text" id="fname" name="fname" placeholder="Nombre" minlength="3" maxlength="40" required>
+                    </div>
+                    <div>
+                        <label for="name">Apellidos:</label><br>
+                        <input type="text" id="name" name="lname" placeholder="Apellidos" minlength="3" maxlength="40" required>
+                    </div>
+                    <div>
+                        <label for="name">Correo electrónico:</abel><br>
+                        <input type="email" id="email" name="email" placeholder="e-mail"required>
+                    </div>
+                </div>
+                <section id="orden">
+                    <div id="contorno" class="separacion">
+                        <label class="h5" for="seasons">Motivo de contacto</label>
+                        <div>
+                            <input type="radio" id="spring" name="seasons" value="spring">
+                            <label for="spring">Oferta laboral</label>
+                        </div>
+                        <div>
+                            <input type="radio" id="summer" name="seasons" value="summer">
+                            <label for="summer">Colaboración empresarial</label>
+                        </div>
+                        <div>
+                            <input type="radio" id="autumn" name="seasons" value="autumn">
+                            <label for="autumn">Intereses laborales comunes</label>
+                        </div>
+                    </div>
+                    <div id="contorno">
+                        <label class="h5" for="comments">Información adicional</label><br>
+                        <textarea rows="5" cols="20" name="comments" placeholder="Escriba aquí..."></textarea>
+                    </div>
+                </section>
+                <div class="space">
+                    <label class="h5" for="places">¿Cómo dió con mi perfil?</label>
+                    <select id="places" name="places">
+                        <option value="playa">A través de un conocido</option>
+                        <option value="montaña">LinkedIn</option>
+                        <option value="ciudades">Buscando en Google</option>
+                        <option value="parques">Recomendación</option>
+                        <option value="otros">Otros</option>
+                    </select><br>
+                </div>
+                <label><input type="checkbox" id="accept" value="accept">Acepto los términos legales.</label>
+                <label for="spam"><input type="checkbox" id="spam" value="spam">Acepto recibir spam.</label>
+                <br>
+                <input type="submit" value="Submit">
+              </form>
+        </section>
+        <section class="contact">
+            <div class="contact-fotos">
+                <img class="contact-linkedIn" src="../assets/linkedinb.jpg" alt="LinkedIn">
+                <img class="contact-gitHub" src="../assets/github.png" alt="GitHub">
+                <img class="contact-mail" src="../assets/mail.jpg" alt="Mail">
+                <img class="contact-call" src="../assets/llamar.jpg" alt="Call me">
+            </div>
+            <div>
+                <h4>¡Contáctame!</h4>
+            </div>
+        </section>
+    </main>
+    <footer id="footer">
+        <p>Autoría: Mónica Ortiz</p>
+    </footer>
+    <script src="../script/script.js"></script>
+</body>
+</html>

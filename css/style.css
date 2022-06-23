@@ -1,0 +1,556 @@
+body{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    font-family: 'Dosis', sans-serif;
+}
+
+#img-portada{
+    background-image: url(../assets/portada);
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+    width: 100%;
+    height: 800px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+
+#h2-portada{
+    display: flex;
+    flex-wrap: wrap;
+    color:#F8EDEB;
+    align-items: flex-end;
+    font-size: 40px;
+    border: 3px white solid;
+    padding: 80px;
+}
+
+#p-portada{
+        display: flex;
+        flex-wrap: wrap;
+        color: #F8EDEB;
+        align-items: flex-end;
+        font-size: 30px;
+        text-shadow: -1px 0 black, 0 1px #d5bdaf, 1px 0 #d5bdaf, 0 -1px #d5bdaf;
+        flex-direction: row;
+        align-content: stretch;
+        justify-content: flex-end;
+        font-weight: 600;
+}
+
+main{
+    width: 100%;
+    margin: 80px;
+}
+/*navegador*/
+nav > ul > li{
+    list-style:none;
+    display: inline;
+    margin-right: 30px;
+    border-radius: 20px;
+    padding:15px;
+    border-bottom: 2px solid #E3D5CA;
+    background-color: #F5EBE0;
+    color:black
+}
+
+nav > ul >li:hover{
+    padding-top:17px;
+    padding-bottom: 17px;
+    background-color: #F5EBE0;
+    }
+
+nav > ul > li > a {
+    text-decoration: none;
+    color:black;
+    }
+
+header{
+        width: 100%;
+        background-color: #D5BDAF;
+        padding:15px;
+        text-align: right;
+    }
+
+    /*SECCIÓN PRINCIPAL*/
+
+section.intro{
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-content: stretch;
+    justify-content: space-evenly;
+    align-items: stretch;
+}
+
+section.intro > div > article{
+    background-color: #E3D5CA;
+    padding:15px;
+    border-bottom: 3px solid #D6CCC2;
+    display: inline-block;
+    width: auto;
+    margin: 30px 20px;
+    text-align: justify;
+}
+
+h2.titulo1{
+    text-align: center;
+    font-size: 3rem;
+    letter-spacing: 3px;
+    border-radius: 0px 20px;
+    color: white;
+    background-color: #D6CCC2;
+    box-shadow:5px 5px 5px #D6CCC2;
+    padding: 10px;
+    margin: 20px;
+}
+
+.center {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-content: space-between;
+    align-items: center;
+}
+
+/*TRATAR LA 2º PARTE:FOTOS*/
+
+.img-main{
+    border-radius: 50%;
+    width: 300px;
+    height: 300px;
+}
+
+.fotos{
+    background-color: white;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    cursor: pointer;
+}
+
+.fotos > article{
+    background-color: #E3D5CA;
+    border-radius: 50%;
+    box-shadow: 5px 10px 8px #888888;
+    padding:15px;
+    display: inline-block;
+    width: auto;
+    margin: 30px 20px;
+    text-align: justify;
+}
+
+.fotos > article:hover{
+    background-color: #D5BDAF;
+    border-radius: 50%;
+    border-bottom: #D5BDAF;
+}
+
+.img-main:hover{
+    background-color: #F5EBE0;
+    border-radius: 50%;
+    border-bottom: #F5EBE0;
+    }
+
+    /* sección "foto-café" */
+
+section.extra{
+    width: 100%;
+    height: 700px;
+    background-color: #F5EBE0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.extra{
+    background-image: url("../assets/coffee-back.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.extra h2{
+    color: #a98467;
+    font-size: 50px;
+}
+
+.paragraph{
+    display: flex;
+    flex-wrap: wrap;
+    color:#a98467;
+    align-items: flex-end;
+    font-size: 30px;
+    font-weight: 600;
+}
+
+/*footer*/
+
+footer{
+    background-color: white;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column-reverse;
+    align-content: space-around;
+    justify-content: space-evenly;
+    align-items: center;
+    border-top: 1px solid #E3D5CA;
+}
+
+.contact{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    flex-direction: column;
+    padding-top: 50px;
+    border-top: 1px solid #E3D5CA;
+}
+
+.linkedIn{
+    width: 100px;
+    height: 50px;
+    padding: 20px;
+}
+
+.linkedIn:hover, .gitHub:hover, .mail:hover, .call:hover{
+    padding-top:17px;
+    padding-bottom: 17px;
+    cursor: pointer;
+}
+
+.gitHub, .mail, .call{
+    width: 50px;
+    height: 50px;
+    padding: 20px;
+}
+
+
+.footer-fotos{
+    display: flex;
+    flex-wrap: wrap;
+    align-content: space-around;
+}
+
+h4{
+    display: flex;
+    flex-wrap: wrap;
+    color: #D5BDAF;
+    align-items: flex-end;
+    font-size: 40px;
+}
+
+footer > p{
+    display: flex;
+    align-content: flex-end;
+}
+
+  /*botón para subir al inicio*/
+  div.top{
+    position: fixed;
+    bottom: 5px;
+    right: 10px;
+    background-color: #F5EBE0;
+    padding: 10px;
+    border-radius: 5px;
+    text-decoration: none;
+    opacity: 80%;
+    -webkit-box-shadow: 0px 3px 0px 2px rgb(0 0 0 / 10%), 0px 6px 0px 4px rgb(0 0 0 / 10%), 5px 5px 3px 5px rgb(252 213 206 / 0%);
+    box-shadow: 0px 3px 0px 2px rgb(0 0 0 / 10%), 0px 6px 0px 4px rgb(0 0 0 / 10%), 5px 5px 3px 5px rgb(252 213 206 / 0%);
+}
+
+/*PÁGINA DE CONTACTO*/
+.contact-fotos{
+    display: flex;
+    flex-wrap: wrap;
+    align-content: space-around;
+}
+
+.contact-linkedIn{
+    width: 100px;
+    height: 50px;
+    padding: 20px;
+}
+
+.contact-gitHub, .contact-mail, .contact-call{
+    width: 50px;
+    height: 50px;
+    padding: 20px;
+}
+
+.contact-linkedIn:hover, .contact-gitHub:hover, .contact-mail:hover, .contact-call:hover{
+    padding-top:17px;
+    padding-bottom: 17px;
+    cursor: pointer;
+    }
+
+#footer{
+    background-color: #D5BDAF;
+}
+
+
+/*PAGINA BIOGRAFÍA*/
+
+#area-trabajo{
+    text-align: center;
+    color: #D5BDAF;
+    font-size: 2em;
+    font-style: italic;
+}
+
+#biografia-page{
+    display: flex;
+    width: 100%;
+    line-height: 2em;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+}
+
+#biografia-page > section > p{
+    text-align: center;
+}
+
+#biografia-page > p{
+    text-align: center;
+    max-width: 704px;
+}
+
+#area-trabajo{
+    text-align: center;
+    color: #D5BDAF;
+    font-size: 2em;
+    font-style: italic;
+}
+
+h3{
+    text-align: center;
+    color: #D5BDAF;
+    font-size: 1.6em;
+}
+
+.trabajos{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-content: center;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.img-trabajos{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    align-content: stretch;
+    align-items: center;
+    margin: 10px 30px 10px 30px;
+    padding-top: 10px;
+}
+
+.img-trabajos>aside, #biografia-page >section>p{
+    max-width: 704px;
+}
+
+
+/*CONTACTO*/
+
+#contacto-page{
+    margin: 80px;
+}
+
+.formulario-h2{
+    display: flex;
+    flex-wrap: wrap;
+    color: #D5BDAF;
+    justify-content: center;
+    font-size: 40px;
+}
+
+.formulario{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: center;   
+    margin: 50px;
+}
+
+.separacion > div{
+    padding: 20px;
+}
+
+
+input[type=text],input[type=email],textarea {
+    width: 100%;
+    padding: 20px 10px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border-radius: 20px;
+    border: 1px solid #D5BDAF;
+  }
+
+  input[type=text]:focus,input[type=email]:focus,textarea:focus {
+    background-color: #F5EBE0;
+  }
+  
+  input[type=submit]{
+    width: 100%;
+    height: 30px;
+    transition-duration: 1s;
+    margin: 20px;
+  }
+  
+  input[type=submit]:hover{
+    background-color: #D5BDAF;
+    width: 100%;
+  }
+
+  .motivo{
+    display: flex;
+    justify-content: center;
+  }
+
+  #orden{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-content: center;
+    margin: 20px;
+  }
+
+  .space{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+  }
+
+  #contorno{
+    padding: 10px;
+  }
+
+  .h5{
+    color: #D5BDAF;
+    font-size: 40px;
+  }
+
+  /*PORFOLIO*/
+
+  .img-porfolio{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    width: 100%;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+
+  .img-fashion{
+    margin: 25px;
+    padding: 30PX;
+    border-radius: 8px;
+    box-shadow: 0 8px 8px 0 rgb(0 0 0 / 15%);
+    }
+
+    #porfolio-h3{
+        background-color: #F5EBE0;
+        box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+        margin-bottom: 60px;
+        border-radius: 20px 0px;
+        color: white;
+        background-color: #D5BDAF;
+    }
+
+    .experiencias{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        align-items: center;   
+    }
+
+    .biografia-page, .experiencias > article > p{
+       text-align: justify;
+       display: flex;
+       flex-wrap: wrap;
+    }
+
+    iframe{
+        width:380px;
+        height:280px;
+    }
+
+    .menu-burger{
+        width: 40px;
+        display: none;
+    }
+    
+    .display-none {
+        display: none;
+    }
+
+    /* LA VISTA MOVIL */
+    @media (max-width: 600px) {
+        .menu-burger{
+            width: 40px;
+            text-align: right;
+            display: block;
+        }
+
+        .menu-collapsed {
+            list-style: inherit;
+            background-color: #F5EBE0;
+            color: black;
+            display: flex;
+            flex-wrap: wrap;
+            flex-direction: column;
+            align-items: center;
+        }
+    
+        .normal-menu{
+            display: none;
+        }
+      }
+
+    /* LA VISTA TABLET */
+    @media (min-width: 601px) and (max-width: 1024px) {
+        .menu-burger{
+            width: 40px;
+            text-align: right;
+            display: block;
+        }
+
+        body{
+            font-size: 18px;
+        }
+        
+        .menu-collapsed {
+            list-style: inherit;
+            background-color: #F5EBE0;
+            color: black;
+        }
+    
+        .normal-menu{
+            display: none;
+        }
+        
+      }
+
+
+    
+    
+
+
+
+
+
