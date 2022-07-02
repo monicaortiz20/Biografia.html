@@ -5,6 +5,19 @@ body{
     font-family: 'Dosis', sans-serif;
 }
 
+/*Para las validaciones */
+.help-text {
+    color: #ee4242;
+    font-size:small;
+    margin-top: 0px;
+}
+
+
+.opcional{
+    font-size: medium;
+    margin-top: 0px;
+}
+
 #img-portada{
     background-image: url(../assets/portada);
     background-repeat: no-repeat;
@@ -402,14 +415,14 @@ input[type=text],input[type=email],textarea {
     background-color: #F5EBE0;
   }
   
-  input[type=submit]{
+  .buttom-form{
     width: 100%;
     height: 30px;
     transition-duration: 1s;
     margin: 20px;
   }
   
-  input[type=submit]:hover{
+  .buttom-form:hover{
     background-color: #D5BDAF;
     width: 100%;
   }
