@@ -62,17 +62,17 @@
                 <section id="orden">
                     <div id="contorno" class="separacion">
                         <label class="h5" for="seasons">Motivo de contacto</label>
-                        <p class="opcional">(Opcional)</p>
+                        <p class="help-text" id="motive">Indica el motivo que más se ajuste</p>
                         <div>
-                            <input type="radio" id="optionOne" name="options" value="spring">
+                            <input type="radio" id="optionOne" name="options" value="ofertaLaboral">
                             <label for="spring">Oferta laboral</label>
                         </div>
                         <div>
-                            <input type="radio" id="optionTwo" name="options" value="summer">
+                            <input type="radio" id="optionTwo" name="options" value="Coworking">
                             <label for="summer">Colaboración empresarial</label>
                         </div>
                         <div>
-                            <input type="radio" id="optionThree" name="options" value="autumn">
+                            <input type="radio" id="optionThree" name="options" value="commonInterest">
                             <label for="autumn">Intereses laborales comunes</label>
                         </div>
                     </div>
@@ -96,7 +96,7 @@
                 <p class="help-text" id="agreement">Acepta los términos y condiciones</p>
                 <label for="spam"><input type="checkbox" id="spam" value="spam">Acepto recibir spam.</label>
                 <br>
-                <input type="button" class="buttom-form" value="Submit" onclick="okSend()">
+                <input type="button" class="buttom-form" value="Submit" id="sendOK">
             </form>
         </section>
         <section class="contact">
