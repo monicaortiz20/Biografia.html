@@ -18,6 +18,9 @@ body{
     margin-top: 0px;
 }
 
+
+/*estilos body */
+
 #img-portada{
     background-image: url(../assets/portada);
     background-repeat: no-repeat;
